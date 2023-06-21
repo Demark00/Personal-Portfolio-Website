@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Portfolio</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/utils.css">
+</head>
+
+<body>
+    <header class="flex align-center justify-space bg-dblue">
+        <div class="logo">
+            Mananindar's Potfolio
+        </div>
+        <nav>
+            <a href="#home" class="a">Home</a>
+            <a href="#about" class="a">About</a>
+            <a href="#skills" class="a">Skills</a>
+            <a href="#services" class="a">Services</a>
+            <a href="#contact" class="a">Contact Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section1" id="home">
+            <div class="flex align-center justify-space home-container">
+                <div class="left">
+                    Hi, My name is <span class="color-dblue">Mananindar Pandey,</span><br>
+                    and I am a <span class="color-dblue" id="element"></span>.
+                </div>
+                <img src="/static/images/home.png" id="img" alt="Image not found">
+            </div>
+        </section>
+
+        <section class="section2" id="about">
+            <h1 class="heading color-dblue">About Me.</h1>
+            <div class="flex align-center justify-space about-container">
+                <img src="/static/images/home.png" id="img" alt="Image not found">
+                <div class="about flex flex-col align-center">
+                    <div class="about-info">
+                        <p><span>Name:</span><span class="color-dblue">Mananindar Yadav</span></p>
+                        <p><span>Profile:</span><span class="color-dblue">Full Stack Developer</span></p>
+                        <p><span>Email:</span><span class="color-dblue">contact@example.com</span></p>
+                        <p><span>Phone:</span><span class="color-dblue"> (617) 557-0089</span></p>
+                    </div>
+                    <div class="about-para">
+                        Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan
+                        id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas
+                        non nisi. Nulla porttitor accumsan tincidunt.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section3" id="skills">
+            <h1 class="heading color-dblue">Skills.</h1>
+            <div class="skill">
+                HTML: <span>90%</span>
+                <div class="skillprogress w-80"></div>
+            </div>
+            <div class="skill">
+                CSS: <span>77%</span>
+                <div class="skillprogress w-70"></div>
+            </div>
+            <div class="skill">
+                JavaScript: <span>70%</span>
+                <div class="skillprogress w-65"></div>
+            </div>
+            <div class="skill">
+                Node.js: <span>50%</span>
+                <div class="skillprogress w-50"></div>
+            </div>
+            <div class="skill">
+                MongoDB: <span>40%</span>
+                <div class="skillprogress w-40"></div>
+            </div>
+        </section>
+
+        <section class="section4" id="services">
+            <h1 class="heading color-dblue">What I Do.</h1>
+            <div class="flex align-center justify-space wrap services">
+                <div class="box-container">
+                    <img src="/static/images/responsive.jpg" class="services-img" alt="Image not found">
+                    <div class="box flex align-center justify-center flex-col">
+                        <i class="fa fa-desktop box-tag"></i>
+                        <div class="content flex flex-col align-center">
+                            <h3>Resposive Design.</h3>
+                            <p>Lavish CSS Template is designed by templatemo. Download, edit and use this layout.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-container">
+                    <img src="/static/images/css templates.jpg" class="services-img" alt="Image not found">
+                    <div class="box flex align-center justify-center flex-col">
+                        <i class="fa fa-css3 box-tag"></i>
+                        <div class="content flex flex-col align-center">
+                            <h3>Resposive Design.</h3>
+                            <p>Lavish CSS Template is designed by templatemo. Download, edit and use this layout.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-container">
+                    <img src="/static/images/server.jpg" class="services-img" alt="Image not found">
+                    <div class="box flex align-center justify-center flex-col">
+                        <i class="fa fa-server" box-tag></i>
+                        <div class="content flex flex-col align-center">
+                            <h3>Resposive Design.</h3>
+                            <p>Lavish CSS Template is designed by templatemo. Download, edit and use this layout.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="section5" id="contact">
+            <h1 class="heading color-dblue">Contact Me.</h1>
+            <div class="flex items-center justify-space contact-container">
+                <div class="connect flex flex-col">
+                    <p class="color-dblue mhead">Reach me at:</p>
+                    <p class="shead">Block-D, Sheetla Colony, Ashok Vihar Phase-2, Gurugram</p>
+                    <p class="color-dblue mhead">Connect me on:</p>
+                    <div class="flex icon align-center">
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-facebook-square"></i>
+                        <i class="fa fa-snapchat"></i>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <form action="/contact" method="post" id="myform">
+                        <div class="form flex flex-col">
+                            <input type="text" name="name" id="name" placeholder=" Your Name">
+                            <input type="email" name="email" id="email" placeholder="Your Email">
+                            <input type="number" name="number" id="number" placeholder="Your Contact Number">
+                            <textarea name="message" id="message" cols="30" rows="5"
+                                placeholder="Message Me."></textarea>
+                        </div>
+                        <div class="buttons flex align-center justify-center">
+                            <input type="submit" value="Submit" id="submit" class="btn">
+                            <input type="reset" value="Reset" class="btn" id="reset">
+                            <!-- <button class="btn" id="submit">Submit</button>
+                                <button class="btn" id="reset">Reset</button> -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="flex align-center justify-center">
+        Copyright © MananindarPortfolio.com | All Rights Reserved
+    </footer>
+
+
+
+    <script src="https://kit.fontawesome.com/11c635850c.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        // setTimeout(() => {
+        let typed = new Typed('#element', {
+            strings: ['Designer', 'FullStack Web Developer', 'Python Developer', 'ChatBot Builder'],
+            typeSpeed: 60,
+        });
+        // }, 7200);
+
+        // let typed2 = new Typed('#element2', {
+        //     strings: ['Welcome to My Portfolio', "And Don't forget to Contact me"],
+        //     typeSpeed: 60,
+        // });
+    </script>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>

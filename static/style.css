@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(0, 0, 33);
+    color: white;
+}
+
+header {
+    padding: 18px 10%;
+}
+
+header nav a {
+    margin-right: 30px;
+    transition: 0.4s;
+}
+
+header nav a:hover {
+    color: rgb(84, 84, 221);
+}
+
+
+section {
+    width: 80vw;
+    margin: auto;
+}
+
+.section2 {
+    margin-top: 5vw;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+#img {
+    width: 40%;
+    margin-top: 3vw;
+}
+
+.left {
+    width: 40vw;
+    font-size: 3vw;
+}
+
+.about {
+    width: 43vw;
+}
+
+.about-info p {
+    font-size: 2vw;
+    margin-top: 10px;
+}
+
+.about-info p span {
+    margin-left: 10px;
+}
+
+.about-para {
+    margin-top: 14px;
+    font-size: 1.8vw;
+    width: 31vw;
+}
+
+.section3 {
+    margin-top: 10vw;
+}
+
+.skill {
+    margin-top: 3vw;
+    font-size: 2vw;
+}
+
+.skill span {
+    font-size: 1.5vw;
+}
+
+.skillprogress {
+    background: rgb(84, 84, 221);
+    height: 9px;
+}
+
+.about {
+    flex-direction: column;
+}
+
+.section4 {
+    margin-top: 8vw;
+}
+
+.box-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.box-container img {
+    margin-top: 2vw;
+    width: 24vw;
+    height: 60vh;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.box-container:hover .box {
+    height: 100%;
+}
+
+.box {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(21, 22, 83));
+    transition: .5s;
+    left: 0;
+    bottom: 0;
+}
+
+.box i {
+    font-size: 4vw;
+    color: rgb(84, 84, 221);
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 1.7vw;
+    transition: .8s;
+    cursor: pointer;
+}
+
+.box i:hover {
+    background: white;
+}
+
+.content h3 {
+    margin-top: 15px;
+    font-size: 2vw;
+}
+
+.content p {
+    font-size: 1.3vw;
+    padding: 10px;
+}
+
+.section5 {
+    margin-top: 8vw;
+}
+
+.connect {
+    padding: 1vw 0;
+    width: 40vw;
+}
+
+.connect p {
+    margin-top: .5vw;
+}
+
+.icon i {
+    font-size: 3vw;
+    margin-left: 2vw;
+    border: 2px solid rgb(84, 84, 221);
+    border-radius: 50%;
+    padding: 1vw;
+    transition: .5s;
+}
+
+.icon i:hover {
+    background: rgb(84, 84, 221);
+}
+
+.contact {
+    width: 40vw;
+}
+
+.form input,
+textarea {
+    background: none;
+    outline: none;
+    font-size: 1.5vw;
+    color: whitesmoke;
+    border: none;
+    padding: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: rgb(11, 13, 127)
+}
+
+.buttons {
+    padding-top: 2vw;
+}
+
+footer {
+    height: 60px;
+    font-size: 1.7vw;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    background: rgb(84, 84, 221);
+    margin-top: 6vw;
+}
+
+@media (max-width:800px) {
+    nav {
+        display: none;
+    }
+
+    .home-container {
+        flex-direction: column-reverse;
+    }
+
+    #img {
+        margin-top: 7vw;
+        width: 100%;
+    }
+
+    .left {
+        font-size: 7vw;
+        width: 90%;
+        margin: auto;
+        margin-top: 7vw;
+    }
+
+    .section2 {
+        margin-top: 12vw;
+    }
+
+    .section2 h1,
+    .section3 h1,
+    .section4 h1,
+    .section5 h1 {
+        font-size: 9vw;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-info p {
+        font-size: 4vw;
+        margin: 2vw auto;
+    }
+
+    .about-para {
+        font-size: 3.5vw;
+        width: 58vw;
+    }
+
+    .section3 {
+        margin-top: 12vw;
+    }
+
+    .skill {
+        font-size: 3.5vw;
+    }
+
+    .skill span {
+        font-size: 2.5vw;
+    }
+
+    .section4 {
+        margin-top: 12vw;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .box-container img {
+        width: 100%;
+    }
+
+    .box-container {
+        padding-bottom: 2vw;
+    }
+
+    .box-container i {
+        font-size: 15vw;
+        padding: 3vw;
+    }
+
+    .content h3 {
+        font-size: 6vw;
+    }
+
+    .content p {
+        font-size: 4vw;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .connect {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .connect p {
+        font-size: 4vw;
+    }
+
+    .icon {
+        margin-top: 2vw;
+    }
+
+    .icon i {
+        font-size: 5vw;
+    }
+
+    .contact {
+        width: 100%;
+        margin-top: 6vw;
+    }
+
+    .contact input,
+    textarea {
+        font-size: 4vw;
+    }
+
+    footer {
+        font-size: 3vw;
+    }
+}
